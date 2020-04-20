@@ -28,6 +28,18 @@ class PostAdapter(context: Context, resId: Int, list:ArrayList<Post>) : ArrayAda
 
         val row = tempRow!!
 
+        val companyNameTxt = row.findViewById<TextView>(R.id.companyNameTxt)
+        val amountTxt = row.findViewById<TextView>(R.id.amountTxt)
+        val userNameTxt = row.findViewById<TextView>(R.id.userNameTxt)
+
+        val postData = mList.get(position)
+
+        companyNameTxt.text = postData.companyName
+        userNameTxt.text = postData.userName
+        amountTxt.text = String.format("%,d 주", postData.amount)
+
+
+
         return row
     }
 

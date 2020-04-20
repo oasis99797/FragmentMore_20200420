@@ -23,6 +23,7 @@
                 android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/companyNameTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="회사이름표시자리"
@@ -44,9 +45,10 @@
                 android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/amountTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2000 주"
+                android:text="2,000 주"
                 android:textColor="#000000"/>
 
         </LinearLayout>
@@ -69,6 +71,7 @@
                 android:layout_height="40dp"
                 android:src="@mipmap/ic_launcher" />
             <TextView
+                android:id="@+id/userNameTxt"
                 android:layout_marginLeft="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
